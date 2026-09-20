@@ -345,8 +345,10 @@ html, body {
 }
 
 .main_routinepage__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
     justify-self: center;
-    justify-items: center;
     margin: 0 auto;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);;
@@ -355,70 +357,6 @@ html, body {
     max-width: 1300px;
     padding: 0 50px;
     gap: 2rem;
-}
-
-.main_routinepage__header {
-    color: #eca742;
-    font-size: 5rem;
-    font-family: times new roman;
-    font-weight: 50;
-    letter-spacing: 0.4rem;
-    align-self: center;
-    padding-top: 2.5rem;
-}
-
-.main_routinepage__container h2 {
-    color: #eca742;
-    font-size: 2rem;
-    font-family: arial;
-    font-weight: 100;
-    align-self: center;
-    padding-top: 2.5rem;
-}
-
-
-/* Concept Previews */
-
-.main_routinepage__Concept1 {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.main_routinepage__Concept2 {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.main_routinepage__Concept3 {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.main_routinepage__Concept4 {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.main_routinepage__Concept5 {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.main_routinepage__Concept6 {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.main_guidepage__Concept {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
 }
 
 
@@ -428,29 +366,51 @@ html, body {
 /* Guidebook Page */
 
 .main_guidepage {
-       width: 60%;
+       width: 100%;
        align-items: center;
        justify-self: center;
+       padding: 0 20px;
 }
 
 .main_guidepage__container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 2.7fr;
+    column-gap: 20px;
+    align-items: center;
     justify-self: center;
-    justify-items: center;
     margin: 0 auto;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);;
+    height: 94vh;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-    gap: 2rem;
 }
 
-.main_guidepage__container h2 {
-    color: #eca742;
-    font-size: 2rem;
-    font-family: arial;
-    font-weight: 100;
-    align-self: center;
-    padding-top: 2.5rem;
+/* Section 1 */
+.main_guidepage__categoryPanel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/* Section 2 */
+.main_guidepage__movePanel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+/* Section 3 */
+.main_guidepage__detailsPanel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
